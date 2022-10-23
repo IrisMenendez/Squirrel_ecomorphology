@@ -563,7 +563,9 @@ pdCVA <- describe.simmap(mtreeCVA)
 
 
 ###
-source("tranform_to_simmap_Julien_Clavel.R")
+
+#Function to transform ancestral states reconstruction to a SIMMAP like tree (to be added to mvMORPH. Please cite this package accordingly)
+source("paintAllTree.R") #see https://github.com/EllenJCoombs/Asymmetry-evolution-cetaceans
 mv_pd <- paintAllTree(ladderize(phy.inf, right=F), pd, as.character(as.vector(diet.phy.inf)))
 mv_pdCVA <- paintAllTree(ladderize(phy.inf, right=F), pdCVA, as.character(as.vector(fundiet.phy.inf)))
 
